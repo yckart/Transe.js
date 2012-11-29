@@ -1,0 +1,30 @@
+{
+    "name": "scrollTransform",
+    "version": "0.0.1",
+    "title": "jQuery.scrollTransform()",
+    "author": {
+        "name": "Yannick Albert",
+        "url": "https://github.com/yckart"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://yckart.com/mit/"
+        },
+        {
+            "type": "GPLv2",
+            "url": "https://github.com/jquery/jquery-color/raw/2.0.0-beta.1/GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6"
+    },
+    "description": "Transformable scroll elements!",
+    "keywords": [
+        "scroll",
+        "transform",
+        "css",
+        "properties"
+    ],
+    "homepage": "https://github.com/yckart/scrollTransform"
+}

@@ -1,0 +1,48 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
+
+html,body{height:100%; overflow:hidden}
+
+#scroller {
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+
+#content1 {color: deeppink; background:magenta}
+#content2 {background:deeppink}
+#content3 {background:crimson}
+#content4 {background:purple}
+#content5 {background:indigo}
+#content6 {background:darkorchid}
+
+.item {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color:#eee;
+    font:700 35px sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+
+img {
+    min-height: 100%;
+    min-width: 1280px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -1
+}
+
+@media screen and (max-width: 1280px) {
+    img {
+        left: 50%;
+        margin-left: -640px;
+    }
+}
