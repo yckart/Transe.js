@@ -1,0 +1,41 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
+
+html,body{height:100%}
+body{font-family:sans-serif}
+
+.animate {position:fixed; top:0; right:0; color:#fff; z-index:999}
+
+.page {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color:#fff;
+    font-size: 100px;
+    font-weight: 700;
+    text-align:center
+}
+
+.transition {
+    /* Force Hardware Acceleration
+    -webkit-transform: translate3d(0,0,0);
+       -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+         -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    */
+
+    /* Animates The Pages */
+    -webkit-transition: all 1s ease-out;
+       -moz-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+            transition: all 1s ease-out
+}
+
+
+#content1 {background:magenta}
+#content2 {background:deeppink}
+#content3 {background:crimson}
+#content4 {background:purple}
+#content5 {background:indigo}
+#content6 {background:darkorchid}

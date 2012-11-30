@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <meta name='viewport' content='width=device-width, maximum-scale=1'>
+
+    <link rel='stylesheet' href='css/style.css'>
+
+    <title>ScrollTransform # Transformable scroll elements</title>
+</head>
+
+<body>
+    <a href='#' class='animate'>Animation On/Off</a>
+    <div id='content1' class="page">Section 1</div>
+    <div id='content2' class="page">Section 2</div>
+    <div id='content3' class="page">Section 3</div>
+    <div id='content4' class="page">Section 4</div>
+    <div id='content5' class="page">Section 5</div>
+    <div id='content6' class="page">Section 6</div>
+
+
+
+    <script src='http://code.jquery.com/jquery-1.8.2.js'></script>
+    <script src='../../src/jquery.scrolltransform.js'></script>
+    <script>
+        $(function() {
+            var page = $(".page");
+
+            $(".animate").on("click", function(){
+                page.toggleClass("transition");
+                return false;
+            });
+
+            $(window).resize(function() {
+                var win = $(this),
+                    winW = win.width(),
+                    winH = win.height();
+
+                $("html,body").css({
+                    height: winH * page.length
+                });
+
+                page.each(function(i, e) {
+                    $(e).css({
+                        width: winW,
+                        height: winH,
+                        position: "fixed", // Not the best way but so we can ensure that it works without JS too
+                        lineHeight: winH + "px"
+                    }).transe({
+                        start: winH * --i,
+                        end: winH * (++i),
+                        property: "top",
+                        before: winH,
+                        after: 0
+                    });
+                });
+            }).resize();
+        });
+    </script>
+</body>
+</html>
