@@ -1,7 +1,7 @@
 {
-    "name": "scrollTransform",
+    "name": "Transe",
     "version": "0.0.1",
-    "title": "jQuery.scrollTransform()",
+    "title": "jQuery.transe.js",
     "author": {
         "name": "Yannick Albert",
         "url": "https://github.com/yckart"
@@ -10,10 +10,6 @@
         {
             "type": "MIT",
             "url": "http://yckart.com/mit/"
-        },
-        {
-            "type": "GPLv2",
-            "url": "https://github.com/jquery/jquery-color/raw/2.0.0-beta.1/GPL-LICENSE.txt"
         }
     ],
     "dependencies": {
@@ -26,5 +22,5 @@
         "css",
         "properties"
     ],
-    "homepage": "https://github.com/yckart/scrollTransform"
+    "homepage": "https://github.com/yckart/jQuery.transe.js"
 }
