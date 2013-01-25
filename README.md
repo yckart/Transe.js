@@ -1,8 +1,74 @@
-#No documentation yet!
+#Usage
+It's quite simple!
+
+Standard Prozedure: include the `jQuery`-lib and `jQuery.transe.js`:
+```html
+<script src="jquery.js"></script>
+<script src="jquery.transe.js></script>
+```
+
+Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform. You must at least set `from`, `to`, `property`, `start` and `end`.
+```javascript
+$('.elem').transe({
+    start: 0,
+    end: 1000,
+    property: 'transform',
+    from: 'rotate(0deg)',
+    to: 'rotate(180deg)'
+});
+```
 
 #Examples
-
 Take a look at [https://github.com/yckart/jQuery.transe.js/tree/master/examples](https://github.com/yckart/jQuery.transe.js/tree/master/examples).
+
+
+#Options
+There're lot of options you can set.
+
+* <b>`container`</b>
+* The container where you're scrolling in. (default: `window`)
+    * Possibles
+        * Each element which is in your `DOM`
+
+* <b>`direction`</b> Which direction you're scrolling. (default: `'vertical'`)
+    * Possibles
+        * `vertical`
+        * `horizontal`
+
+* <b>`from`</b> The position where the transformation starts (default `0`)
+    * Possibles
+        * All numbers between 0 and Infinity
+
+* <b>`to`</b> The position where the transformation starts (default `0`)
+    * Possibles
+        * All numbers between 0 and Infinity
+
+* <b>`css`</b> The property to transform (default: `''`)
+    * Possibles
+        * Here's an [overview](#properties)
+
+* <b>`tween`</b> You like smooth animations? Me too! You can use the TweenLite library and their possibilities.
+    * `use` Enables the power of TweenLite (default: `false`)
+    * `speed` The animation duration duration (default: `1`)
+    * `easing` The easing method for your animations (default: `''`)
+
+* <b>`easing`</b> The easing method applies for your total scroll transform (default: `'linear'`)
+    * Possibles
+        * `'linear'`
+        * `'swing'`
+        * ...and all methods you write or make possible via the [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/).
+
+* <b>`scrollProperty`</b> The property which is used to do your transformation (default: `scroll`)
+    * Possibles
+        * `'scroll'`
+        * `'position'`
+        * `'margin'`
+        * `'transform'`
+
+## Functions
+* <b>`isHidden`</b> Fire's a callback if the element is hidden
+* <b>`isVisible`</b> Fire's a callback if the element is visible
+
 
 #Support
 
