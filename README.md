@@ -25,8 +25,7 @@ Take a look at [https://github.com/yckart/jQuery.transe.js/tree/master/examples]
 #Options
 There're lot of options you can set.
 
-* <b>`container`</b>
-* The container where you're scrolling in. (default: `window`)
+* <b>`container`</b> The container where you're scrolling in. (default: `window`)
     * Possibles
         * Each element which is in your `DOM`
 
