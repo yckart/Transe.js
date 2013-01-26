@@ -24,6 +24,27 @@ $('.elem').transe({
 });
 ```
 
+If you've a lot elements to Transe, it's even possible to wrap an array around your options-objects:
+
+```javascript
+$.transe([
+    document.body, {
+        from: 0,
+        to: docH,
+        css: 'backgroundColor',
+        start: 'rgb(255, 255, 255)',
+        end: 'rgb(0, 0, 0)'
+    },
+    '.page', {
+        from: 0,
+        to: docH,
+        css: 'color',
+        start: 'rgb(0, 0, 0)',
+        end: 'rgb(255, 255, 255)'
+    }
+]);
+```
+
 #Examples
 Take a look at [https://github.com/yckart/jQuery.transe.js/tree/master/examples](https://github.com/yckart/jQuery.transe.js/tree/master/examples).
 
