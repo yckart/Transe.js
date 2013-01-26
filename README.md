@@ -13,14 +13,14 @@ You can optional include the TweenMax library
 -->
 ```
 
-Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform. You must at least set `from`, `to`, `property`, `start` and `end`.
+Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform. You must at least set `from`-offset, `to`-offset, `css`-property, `start`-value and `end`-value.
 ```javascript
 $('.elem').transe({
-    start: 0,
-    end: 1000,
+    from: 0,
+    to: 1000,
     css: 'transform',
-    from: 'rotate(0deg)',
-    to: 'rotate(180deg)'
+    start: 'rotate(0deg)',
+    end: 'rotate(180deg)'
 });
 ```
 
@@ -29,18 +29,18 @@ If you've a lot elements to Transe, it's even possible (and recommended) to wrap
 ```javascript
 $.transe([
     document.body, {
-        start: 0,
-        end: 500,
+        from: 0,
+        to: 500,
         css: 'backgroundColor',
-        from: 'rgb(255, 255, 255)',
-        to: 'rgb(0, 0, 0)'
+        start: 'rgb(255, 255, 255)',
+        end: 'rgb(0, 0, 0)'
     },
     '.elem', {
-        start: 0,
-        end: 500,
-        css: 'left',
         from: 0,
-        to: 100
+        to: 500,
+        css: 'left',
+        start: 0,
+        end: 100
     }
 ]);
 ```
@@ -65,13 +65,13 @@ There're lot of options you can set.
     * Possibles
         * All numbers between 0 and Infinity
 
-* <b>`to`</b> The position where the transformation starts (default `0`)
+* <b>`to`</b> The position where the transformation ends (default `0`)
     * Possibles
         * All numbers between 0 and Infinity
 
 * <b>`css`</b> The property to transform (default: `''`)
     * Possibles
-        * Here's an [overview](https://github.com/yckart/jQuery.transe.js/wiki/Properties)
+        * You can actually use ANY `css2` / `css3`-property that expects a number as value. Here's an [overview](https://github.com/yckart/jQuery.transe.js/wiki/Properties)
 
 * <b>`tween`</b> You like smooth animations? Me too! You can use the TweenLite library and their possibilities.
     * `use` Enables the power of TweenLite (default: `false`)
@@ -95,6 +95,12 @@ There're lot of options you can set.
 * <b>`isHidden`</b> Fire's a callback if the element is hidden
 * <b>`isVisible`</b> Fire's a callback if the element is visible
 
+#Public Methods
+* `option` Get and set options after instantiation
+    * Get: `$('.elem').transe('option')` returns all options that have been applied to the element.
+    * Get: `$('.elem').transe('option', 'css')` returns the applied css-property
+    * Set: `$('.elem').transe('option', 'scrollProperty', 'transform')` sets the `scrollProperty` to `transform`
+* `destroy` Removes the Transe instance, returning target element to it's initial state
 
 #Support
 
