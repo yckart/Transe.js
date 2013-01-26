@@ -30,17 +30,17 @@ If you've a lot elements to Transe, it's even possible to wrap an array around y
 $.transe([
     document.body, {
         from: 0,
-        to: docH,
+        to: 500,
         css: 'backgroundColor',
         start: 'rgb(255, 255, 255)',
         end: 'rgb(0, 0, 0)'
     },
-    '.page', {
+    '.elem', {
         from: 0,
-        to: docH,
-        css: 'color',
-        start: 'rgb(0, 0, 0)',
-        end: 'rgb(255, 255, 255)'
+        to: 500,
+        css: 'left',
+        start: 0,
+        end: 100
     }
 ]);
 ```
