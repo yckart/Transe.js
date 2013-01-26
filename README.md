@@ -7,8 +7,8 @@ Standard Prozedure: include the `jQuery`-lib and `jQuery.transe.js`:
 <script src="jquery.transe.js"></script>
 
 <!--
-optional the TweenMax library
-You can even use TweenLite with its CSS-Plugin 
+You can optional include the TweenMax library
+(or TweenLite with its CSS-Plugin)
 <script src="TweenMax.js"></script>
 -->
 ```
