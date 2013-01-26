@@ -50,7 +50,7 @@ There're lot of options you can set.
 
 * <b>`css`</b> The property to transform (default: `''`)
     * Possibles
-        * Here's an [overview](#properties)
+        * Here's an [overview](https://github.com/yckart/jQuery.transe.js/wiki/Properties)
 
 * <b>`tween`</b> You like smooth animations? Me too! You can use the TweenLite library and their possibilities.
     * `use` Enables the power of TweenLite (default: `false`)
