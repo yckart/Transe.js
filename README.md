@@ -91,7 +91,6 @@ There're lot of options you can set.
         * `'margin'`
         * `'transform'`
 
-## Functions
 * <b>`isHidden`</b> Fire's a callback if the element is hidden
 * <b>`isVisible`</b> Fire's a callback if the element is visible
 
@@ -111,7 +110,13 @@ There're lot of options you can set.
 **Fix**
 * Fix the destroy method (doesn't work with multiple instances)
 
-#Support
+#Browser Support
+[Transe](http://github.com/yckart/jquery.transe.js) works with all browsers that supports thes CSS-Property you use. If you've the need to support CSS3-features like `transform`s you can you libraries like:
+* [jquery.transition.js](https://github.com/louisremi/jquery.transition.js) by Louis-Rémi
+* [transform](https://github.com/heygrady/transform) by Grady Kuhnline
+* [transformie](https://github.com/pbakaus/transformie) by Paul Bakaus
+
+#Credits
 
 [@yckart](http://twitter.com/yckart/) #transe
 
