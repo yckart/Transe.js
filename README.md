@@ -24,23 +24,23 @@ $('.elem').transe({
 });
 ```
 
-If you've a lot elements to Transe, it's even possible to wrap an array around your options-objects:
+If you've a lot elements to Transe, it's even possible (and recommended) to wrap an array around your objects:
 
 ```javascript
 $.transe([
     document.body, {
-        from: 0,
-        to: 500,
+        start: 0,
+        end: 500,
         css: 'backgroundColor',
-        start: 'rgb(255, 255, 255)',
-        end: 'rgb(0, 0, 0)'
+        from: 'rgb(255, 255, 255)',
+        to: 'rgb(0, 0, 0)'
     },
     '.elem', {
-        from: 0,
-        to: 500,
-        css: 'left',
         start: 0,
-        end: 100
+        end: 500,
+        css: 'left',
+        from: 0,
+        to: 100
     }
 ]);
 ```
