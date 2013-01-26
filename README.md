@@ -1,4 +1,4 @@
-#Usage
+#Usage ([wiki](https://github.com/yckart/jquery.transe.js/wiki))
 It's quite simple!
 
 Standard Prozedure: include the `jQuery`-lib and `jQuery.transe.js`:
