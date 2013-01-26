@@ -56,10 +56,10 @@ There're lot of options you can set.
     * Possibles
         * Each element which is in your `DOM`
 
-* <b>`direction`</b> Which direction you're scrolling. (default: `'vertical'`)
+* <b>`direction`</b> Which direction you're scrolling. (default: `'y'`)
     * Possibles
-        * `vertical`
-        * `horizontal`
+        * `y` // vertical
+        * `x` // horizontal
 
 * <b>`from`</b> The position where the transformation starts (default `0`)
     * Possibles
