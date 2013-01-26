@@ -102,6 +102,15 @@ There're lot of options you can set.
     * Set: `$('.elem').transe('option', 'scrollProperty', 'transform')` sets the `scrollProperty` to `transform`
 * `destroy` Removes the Transe instance, returning target element to it's initial state
 
+#Todo
+**Add**
+* Color support for `rgba` and `hex`
+* Make it possible to use units (`px`, `%`, `em` etc.)
+* Create a workaround to make 4-digit margin/padding strings possible
+
+**Fix**
+* Fix the destroy method (doesn't work with multiple instances)
+
 #Support
 
 [@yckart](http://twitter.com/yckart/) #transe
