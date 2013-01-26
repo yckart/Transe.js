@@ -5,6 +5,9 @@ Standard Prozedure: include the `jQuery`-lib and `jQuery.transe.js`:
 ```html
 <script src="jquery.js"></script>
 <script src="jquery.transe.js></script>
+
+<!-- optional -->
+<script src="TweenLite.js></script>
 ```
 
 Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform. You must at least set `from`, `to`, `property`, `start` and `end`.
