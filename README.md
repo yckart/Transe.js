@@ -18,7 +18,7 @@ Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element yo
 $('.elem').transe({
     start: 0,
     end: 1000,
-    property: 'transform',
+    css: 'transform',
     from: 'rotate(0deg)',
     to: 'rotate(180deg)'
 });
