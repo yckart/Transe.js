@@ -77,6 +77,7 @@
             text-align: center;
             white-space: nowrap;
         }
+        h2{font-weight:700; color:deeppink; text-shadow: 0 0 1px #0ae;}
         hr {
             margin:10px 0;
             padding:0;
@@ -228,7 +229,7 @@
 
     <hr>
 
-    <ul class="nav">
+<!--     <ul class="nav">
         <li class="bg"><a href="examples/backgroundPosition/">background</a></li>
         <li class="clip"><a href="examples/clip/">clip</a></li>
         <li class="color"><a href="examples/color/">color</a></li>
@@ -237,28 +238,33 @@
         <li class="src"><a href="examples/src/">src</a></li>
         <li class="sticky"><a href="examples/sticky/">sticky</a></li>
         <li class="mobile"><a href="examples/mobile/">mobile</a></li>
-    </ul>
+    </ul> -->
+
+    <h2>No examples, yet.</h2>
 
     <hr>
 
     <ul class="download">
-        <li><a href="https://github.com/yckart/jQuery.transe.js/archive/master.tar.gz">Tarball</a></li>
-        <li><a href="https://github.com/yckart/jQuery.transe.js/archive/master.zip">Zip</a></li>
-        <li><a href="https://github.com/yckart/jQuery.transe.js">Fork on GitHub</a></li>
+        <li><a href="https://github.com/yckart/jquery.transe.js/archive/master.tar.gz">Tarball</a></li>
+        <li><a href="https://github.com/yckart/jquery.transe.js/archive/master.zip">Zip</a></li>
+        <li><a href="https://github.com/yckart/jquery.transe.js">Fork on GitHub</a></li>
     </ul>
 
-    <div class="credits">
+<!--     <div class="credits">
         Made with love by <a href="https://github.com/yckart">Yannick Albert</a> | <a href="https://twitter.com/yckart">@yckart</a><br>
         available under the MIT license.
     </div>
-
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+ -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
         $(function() {
             $(window).on('resize', function() {
-                var fontSize = parseInt($('h1').css('fontSize')) * ($('h1').parent().width() / $('h1').width()) / 1.5 + 'px';
+                var fontSize = parseFloat($('h1').css('fontSize')) * ($('h1').parent().width() / $('h1').width()) / 1.5;
                 $('h1').css({
-                    fontSize: fontSize
+                    fontSize: fontSize + 'px'
+                });
+                $('h2').css({
+                    fontSize: fontSize * 0.5 + 'px'
                 });
             }).resize();
         });
