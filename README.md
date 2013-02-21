@@ -16,7 +16,8 @@ You can optional include the TweenMax library
 -->
 ```
 
-Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform. You must at least set `from`-offset, `to`-offset, `css`-property, `start`-value and `end`-value.
+Initialize [Transe](http://github.com/yckart/jquery.transe.js) on the element you wish to transform.
+You must at least set a `start`-offset, `end`-offset, the `css`-property and a `from`- and `to`-value.
 ```javascript
 $('.elem').transe({
     start: 0,
