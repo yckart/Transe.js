@@ -1,3 +1,6 @@
+#Something about
+You like animations, scroll-events and css transforms? Awesome, me too! But the thing is, that a fancy thing is not necessarily the same as a fancy thing. So I wrote this plugin to make everything fancy! But see for yourself:
+
 #Usage ([wiki](https://github.com/yckart/jquery.transe.js/wiki))
 It's quite simple!
 
