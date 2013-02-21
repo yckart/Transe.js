@@ -1,26 +1,33 @@
 {
-    "name": "Transe",
-    "version": "0.0.1",
-    "title": "jQuery.transe.js",
-    "author": {
-        "name": "Yannick Albert",
-        "url": "https://github.com/yckart"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://yckart.com/mit/"
-        }
-    ],
-    "dependencies": {
-        "jquery": ">=1.6"
-    },
+    "name": "transe",
+    "title": "jQuery Transe",
     "description": "Transformable scroll elements!",
     "keywords": [
-        "scroll",
-        "transform",
+        "ui",
         "css",
+        "css3",
+        "scroll",
+        "tween",
+        "tweenmax",
+        "tweenlite",
+        "transform",
         "properties"
     ],
-    "homepage": "https://github.com/yckart/jQuery.transe.js"
+    "version": "2.0.1",
+    "author": {
+        "name": "Yannick Albert",
+        "email": "mail@yckart.com",
+        "url": "https://github.com/yckart"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://yckart.com/mit/"
+    }],
+    "homepage": "http://yckart.github.com/jquery.transe.js",
+    "demo": "http://yckart.github.com/jquery.transe.js",
+    "docs": "https://github.com/yckart/jquery.transe.js",
+    "bugs": "https://github.com/yckart/jquery.transe.js/issues",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
 }
