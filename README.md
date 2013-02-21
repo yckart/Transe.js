@@ -103,8 +103,9 @@ There're lot of options you can set.
         * `'margin'`
         * `'transform'`
 
+#Callbacks
 * <b>`isHidden`</b> Fire's a callback if the element is hidden
-* <b>`isVisible`</b> Fire's a callback if the element is visible
+* <b>`isVisible`</b> Same as above but if it is visible
 
 #Public Methods
 * `option` Get and set options after instantiation
