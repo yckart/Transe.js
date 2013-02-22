@@ -102,8 +102,7 @@ There're lot of options you can set.
         * `'position'`
         * `'margin'`
         * `'transform'`
-        * 
-        * New: any `integer`, so you can use the mousewheel delta too
+        * New: any `integer`, so you can use the mousewheel delta
 
 #Callbacks
 * <b>`isHidden`</b> Fire's a callback if the element is hidden
