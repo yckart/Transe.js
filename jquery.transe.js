@@ -1,5 +1,5 @@
 /*!
- * jquery.transe.js 2.0 - https://github.com/yckart/jQuery.transe.js
+ * jquery.transe.js 2.0.2 - https://github.com/yckart/jQuery.transe.js
  * Transformable scroll elements!
  *
  * Inspired by John Polacek's Scrollorama
@@ -20,13 +20,14 @@
             to: '',
             container: $(window),
             direction: 'y',
+            offsetter: 'scroll',
             tween: {
                 use: false,
                 speed: 1,
                 easing: ''
             },
             easing: 'linear',
-            offsetter: 'scroll',
+
             isHidden: $.noop,
             isVisible: $.noop
         },
@@ -85,7 +86,7 @@
             var self = this;
 
             // assign the variable property for before and after
-            if (isNaN(Number(this.options.from))) {
+            if ( isNaN( Number(this.options.from) ) ) {
                 this.matrixBefore = Helpers.matrixToArray(this.options.from);
                 this.matrixAfter = Helpers.matrixToArray(this.options.to);
 
@@ -107,8 +108,8 @@
                 currentCss = {},
                 scrollRange = this.options.end - this.options.start;
 
-            // get the scroll-offset based on which option is choosed
-            this.scroll = scrollProperty[this.options.offsetter][this.options.direction](this.options.container);
+            // get the scroll-offset based on which option is choosed, if a number is passed it 'll use this
+            this.scroll = !isNaN( Number(this.options.offsetter) ) ? Number(this.options.offsetter) : scrollProperty[this.options.offsetter][this.options.direction](this.options.container);
 
             // calculate the scroll-percentage
             var scrollPercentage = (this.scroll - this.options.start) / scrollRange;
@@ -174,13 +175,10 @@
 
             (function loop() {
                 // don't call `_transeIt()` if the content wasn't moved
-                if(scrollProperty[self.options.offsetter][self.options.direction](self.options.container) !== self.scroll) self._transeIt();
+                if( ( !isNaN(Number(self.options.offsetter)) ? Number(self.options.offsetter) : scrollProperty[self.options.offsetter][self.options.direction](self.options.container) ) !== self.scroll) self._transeIt();
                 self.req = requestAnimationFrame(loop);
             })();
 
-            $(window).resize(function () {
-                cancelAnimationFrame(self.req);
-            });
         },
 
         destroy: function(){
