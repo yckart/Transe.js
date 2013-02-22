@@ -96,12 +96,14 @@ There're lot of options you can set.
         * `'swing'`
         * ...and all methods you write or make possible via the [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/).
 
-* <b>`scrollProperty`</b> The property which is used to do your transformation (default: `scroll`)
+* <b>`offsetter`</b> The property which is used to do your transformation (default: `scroll`)
     * Possibles
         * `'scroll'`
         * `'position'`
         * `'margin'`
         * `'transform'`
+        * 
+        * New: any `integer`, so you can use the mousewheel delta too
 
 #Callbacks
 * <b>`isHidden`</b> Fire's a callback if the element is hidden
