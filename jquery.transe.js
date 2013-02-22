@@ -228,4 +228,4 @@
         return returns === undefined ? this : returns;
     };
 
-})(jQuery, TweenLite, window);
+})(jQuery, window.TweenLite, window);
