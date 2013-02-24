@@ -135,7 +135,7 @@
                     this.$elem.css(this.cssArgsAfter);
                 }
 
-                this.options.isHidden();
+                this.options.isHidden(this.elem);
 
             } else {
 
@@ -163,7 +163,7 @@
                     this.$elem.css(currentCss);
                 }
 
-                this.options.isVisible();
+                this.options.isVisible(this.elem;
             }
         },
 
