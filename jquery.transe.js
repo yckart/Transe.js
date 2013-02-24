@@ -24,7 +24,7 @@
             tween: {
                 use: false,
                 speed: 1,
-                easing: ''
+                ease: ''
             },
             easing: 'linear',
 
@@ -34,7 +34,7 @@
         Helpers = {
             getUnit: function(val) { return (/[0-9]+([^ ,\)]*)(,*)/).exec(val); },
             getIdentifier: function(matrix){ return matrix.split('('); },
-            matrixToArray: function(matrix){ return matrix.match(/(-?[0-9]+)/g); }
+            matrixToArray: function(matrix){ return matrix.slice(matrix.indexOf('(') + 1, matrix.indexOf(')')).split(','); }
         },
         scrollProperty = {
             scroll: {
