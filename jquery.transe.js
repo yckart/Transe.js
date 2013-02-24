@@ -163,7 +163,7 @@
                     this.$elem.css(currentCss);
                 }
 
-                this.options.isVisible(this.elem;
+                this.options.isVisible(this.elem);
             }
         },
 
