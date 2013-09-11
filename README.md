@@ -1,8 +1,88 @@
 #No documentation yet!
 
-#Examples
+##Usage
 
-Take a look at [https://github.com/yckart/jQuery.transe.js/tree/master/examples](https://github.com/yckart/jQuery.transe.js/tree/master/examples).
+    <div class="box first"></div>
+    <div class="box"></div>
+
+###Vanilla
+
+    var transe = new Transe();
+
+    transe.addFrame({
+        // from - to
+        'body': {
+            from: {
+                backgroundColor: 'rgb(0, 10, 100)'
+            },
+            to: {
+                backgroundColor: 'rgb(0, 100, 100)'
+            }
+        },
+
+        // percentage
+        '.box': {
+            '0%': {
+                right: '100%',
+                transform: 'rotate(0)'
+            },
+            '100%': {
+                right: 0,
+                transform: 'rotate(360deg)'
+            }
+        },
+
+        // fixed
+        '.first': {
+            0: {
+                background: '#f00'
+            },
+
+            400: {
+                background: '#000'
+            }
+        }
+    });
+
+
+###jQuery
+
+    $.transe({
+        // from - to
+        'body': {
+            from: {
+                backgroundColor: 'rgb(0, 10, 100)'
+            },
+            to: {
+                backgroundColor: 'rgb(0, 100, 100)'
+            }
+        },
+
+        // percentage
+        '.box': {
+            '0%': {
+                right: '100%',
+                transform: 'rotate(0)'
+            },
+            '100%': {
+                right: 0,
+                transform: 'rotate(360deg)'
+            }
+        },
+
+        // fixed
+        '.first': {
+            0: {
+                background: '#f00'
+            },
+
+            400: {
+                background: '#000'
+            }
+        }
+    });
+
+Take a look at the [examples](https://github.com/yckart/Transe.js/tree/master/examples).
 
 #Support
 
@@ -17,7 +97,7 @@ Take a look at [https://github.com/yckart/jQuery.transe.js/tree/master/examples]
 
 
 ###License
-Copyright (c) 2012 Yannick Albert ([http://yckart.com/](http://yckart.com/))
+Copyright (c) 2013 Yannick Albert ([http://yckart.com/](http://yckart.com/))
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
