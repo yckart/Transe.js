@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <style>
+    html, body {height: 4000px}
+        .circle {
+            position: fixed;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border-radius: 50%;
+        }
+
+        .spinner {
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -50px;
+        }
+
+
+        .one,
+        .two,
+        .three,
+        .four {
+            top: 50%;
+            left: 50%;
+            width: 500px;
+            height: 500px;
+            margin: -250px 0 0 -250px;
+        }
+
+        .one { background: tomato }
+        .two { background: yellowgreen }
+        .three { background: deepskyblue }
+        .four { background: darkorchid }
+    </style>
+
+    <title></title>
+</head>
+<body>
+
+    <div class="spinner circle"></div>
+    <div class="one circle"></div>
+    <div class="two circle"></div>
+    <div class="three circle"></div>
+    <div class="four circle"></div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="../transe.js"></script>
+    <script>
+        // Object.keys polyfill for IE8 and below
+        Object.keys = Object.keys || function(o, k){
+            var r = [];
+            for(k in o) r.hasOwnProperty.call(o, k) && r.push(k);
+            return r;
+        };
+
+
+
+        $('.spinner').transe({
+            0: {
+                top: '-10%',
+                transform: 'rotateY(0deg)'
+            },
+            300: {
+                top: '50%'
+            },
+            500: {
+                transform: 'rotateY(180deg)'
+            },
+
+            1000: {
+                transform: 'rotateY(360deg)'
+            }
+        });
+
+
+        $.transe({
+            '.one': {
+                1000: {
+                    transform: 'scale(0)'
+                },
+                1500: {
+                    transform: 'scale(5)'
+                }
+            },
+            '.two': {
+                1500: {
+                    transform: 'scale(0)'
+                },
+                2000: {
+                    transform: 'scale(5)'
+                }
+            },
+
+            '.three': {
+                2000: {
+                    transform: 'scale(0)'
+                },
+                2500: {
+                    transform: 'scale(5)'
+                }
+            },
+
+            '.four': {
+                2500: {
+                    transform: 'scale(0)'
+                },
+                3000: {
+                    transform: 'scale(5)'
+                }
+            }
+        }, {
+            forcesize: false
+        });
+    </script>
+</body>
+</html>
