@@ -8,12 +8,10 @@
         "css3",
         "scroll",
         "tween",
-        "tweenmax",
-        "tweenlite",
         "transform",
         "properties"
     ],
-    "version": "2.0.1",
+    "version": "3.0.0",
     "author": {
         "name": "Yannick Albert",
         "email": "mail@yckart.com",
@@ -23,11 +21,8 @@
         "type": "MIT",
         "url": "http://yckart.com/mit/"
     }],
-    "homepage": "http://yckart.github.com/jquery.transe.js",
-    "demo": "http://yckart.github.com/jquery.transe.js",
-    "docs": "https://github.com/yckart/jquery.transe.js",
-    "bugs": "https://github.com/yckart/jquery.transe.js/issues",
-    "dependencies": {
-        "jquery": ">=1.8"
-    }
+    "homepage": "http://yckart.github.io/Transe.js",
+    "demo": "http://yckart.github.io/Transe.js",
+    "docs": "https://github.com/yckart/Transe.js",
+    "bugs": "https://github.com/yckart/Transe.js/issues"
 }
