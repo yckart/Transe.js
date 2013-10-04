@@ -199,7 +199,7 @@
         // scroll properties
         scroll: {
             y: function (elem) { return Helpers.isNode(elem) ? elem.scrollTop : (HTML.scrollTop || BODY.scrollTop); },
-            x: function (elem) { return Helpers.isNode(elem) ? elem.scrollLeft : (HTML.scrollLeft || BODY.scrollLeft); },
+            x: function (elem) { return Helpers.isNode(elem) ? elem.scrollLeft : (HTML.scrollLeft || BODY.scrollLeft); }
         },
         position: {
             y: function (elem) { return parseFloat(css(elem, 'top')) * -1; },
